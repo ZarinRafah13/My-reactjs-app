@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+const x ="Started learning React";
+const y="it is a sunny day"
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <div>
+  <h2 className="headStyling">To Do List</h2> 
+  <h3>Call Directory</h3>
+  <p>The Paragraphs module in Drupal provides editors with a component driven architecture for building pages. </p>
+  <p>{x}</p>
+  <p>29/10/2021</p>
+  <p>{new Date().getFullYear()}</p>
+  <p>{"Today's weather:"+ y}</p>
+  </div> ,
+  document.getElementById('root') //kothay dekhate chachchi
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
